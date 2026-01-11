@@ -1,13 +1,13 @@
 # 학점은행제 교육원 GIT 저장소.
 ## Class List
-1. C (Fri)
-2. Algorithm (Sat)
-3. Data Structure (Sat)`
-4. OS (Sat)`
-5. Software Engineering (Mon)
-6. Database (Tue)
-7. Computer Structure (Wed)
-8. Computer Network (Thu)
+1. `(Fri)` C 
+2. `(Sat)` Algorithm 
+3. `(Sat)` Data Structure 
+4. `(Sat)` OS 
+5. `(Mon)` Software Engineering 
+6. `(Tue)` Database 
+7. `(Wed)` Computer Structure 
+8. `(Thu)` Computer Network 
 
 ---
 나중엔 모두 합치도록, OMSCS 들어간다면,  
