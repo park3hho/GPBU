@@ -1,10 +1,10 @@
 version: '3.8'
 services:
   c-service:
-    build: ./C
+    build: 1. C (Fri)
     container_name: gpbu-c
     volumes:
-      - ./C:/workspace
+      - ./1. C (Fri):/workspace
     tty: true
     stdin_open: true
     command: bash

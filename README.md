@@ -9,10 +9,12 @@
 7. `(Wed)` Computer Structure 
 8. `(Thu)` Computer Network 
 
+Hierarchy  
+- A1
+  - (1)
+    - ㄱ.
 
-ㅠㅜㅠ
 
-회사에서 작업한거 깃안올려썽,,
 ---
 나중엔 모두 합치도록, OMSCS 들어간다면,  
 OMSCS: https://velog.io/@park2do/OMSCS-%EA%B3%BC%EC%A0%95-%EC%A4%80%EB%B9%84
