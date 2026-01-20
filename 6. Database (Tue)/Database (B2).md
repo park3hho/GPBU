@@ -55,6 +55,69 @@
 - 수정이 자주 발생하지 않는 Column 또는 반복 Column이 분할되는 경우
 
 ## K10. RAID의 개념 및 종류
+### (1) RAID의 개념
+여러 개의 하드 디스크를 하나의 Virtual Disk로 구성하여 대용량 저장장치로 사용
+- 여러 개의 하드 디스크에 데이터를 분할, 저장
+  - 전송속도의 향상 및 시스템 가동 중 생길 수 있는 하드 디스크의 에러를 시스템 정지 없이 교체함으로써 데이터 자동복구 수행
 
+### (2) RAID의 레벨
+#### ㄱ. RAID 0 (Striping)
+- 데이터의 빠른 입-출력이 가능하도록 여러개의 하드 디스크에 분산되어 저장
+  - 하나의 디스크에 저장하는 데 8분이 소요되는 데이터를 4개의 데스크에 동시 분산하여 저장하면 2분만에 저장 완료.
+
+#### ㄴ. RAID 1 (Mirroring)
+- 단순히 한 드라이브에 기록되는 모든 데이터를 다른 드라이브에 복사하는 방식
+
+#### ㄷ. RAID 2 (Hamming for Error Correction)
+- RAID 0처럼 스트라이핑 방식
+- Hamming Code 씀, Raid 4가 나오며 쓰지 않음
+
+#### ㄹ. RAID 3
+- Parallel transfer with parity, Dedicated Parity
+- Striping 구성에 추가로 에러 체크 및 수정을 위해서 Parity 정보를 별도의 디스크에 따로 저장.
+- byte 단위로 디스크에 나누어 저장
+
+#### ㅁ. RAID 4
+- 대형 스트라이프 사용
+- 데이터를 블록 단위로 나눠 기록하며 RAID 3과 같은 방식
+
+#### ㅁ. RAID 5
+- Independent data disks with distributed parity blocks
+- 가장 널리 사용되고 있는 방식
+- 3-4의 단점(Parity Drive의 병목현상)을 개선한 것
+- 별도 Parity Drive가 아닌 나누어 저장함
+
+#### ㅂ. RAID 6
+- P + Q Redundancy scheme, Distributed Parity
+- 이중으로 Parity를 넣음
+
+#### ㄹ. RAID 1 + 0 / -0 + 1
+- 0 + 1은 RAID 0을 미러링 하는 것
+- 1 + 0은 RAID 1을 미러링 하는 것
 
 ## L11. 파일 설계
+### (1) 파일 설계 개요
+기본 요소  
+필드 &rarr; 레코드 &rarr; 파일 &rarr; 데이터베이스
+
+#### ㄱ. 데이터베이스의 거주 장소
+- 저장 공간의 방대성 
+- 비휘발성
+- 접근 시간의 비효율성
+
+#### ㄴ. 처리 절차
+1. Find the Location of Data  
+2. Read and Move Data to Buffer  
+3. Process  
+4. Write Back  
+
+#### ㄷ. 블록킹의 필요성
+- 디스크 접근 횟수를 줄이기 위함
+  - 레코드 단위로 저장하면 I/O 횟수가 많아짐
+- 파일 크기를 고려하여 트랙을 블록 단위로 나눔
+- 데이터 접근 최소 단위는 블록
+
+#### ㄹ. 블록킹 인수, Blocking Factor: BFR
+- 한 블록에 저장되는 레코드들의 개수
+- 디스크 IO를 줄이지만, 버퍼 크기만큼 Main Memory의 비효율성을 야기함
+
