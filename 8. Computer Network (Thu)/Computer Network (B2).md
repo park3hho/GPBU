@@ -6,8 +6,8 @@
 - 통신 제어장치
 
 정보전송 시스템: 데이터 처리계
-- 컴퓨터(중앙처리장치, 기억장치, ㅇ비출력 장치
-- 
+- 컴퓨터(중앙처리장치, 기억장치, 입출력 장치
+
 
 ### (2) 데이터 전송계
 **단말장치**: 정보의 입력과 수신  
@@ -81,7 +81,7 @@
 - 디지털망에 사용하는 회선 종단 장치(DCE)
 
 #### ㄷ. 통신회선
-- 데이터를ㄹ 전송하는 통로
+- 데이터를 전송하는 통로
 - 통신기기 사이를 연결하는 역할
 - 데이터 전송선로 또는 정보전송 매체
 - 데이터 전송선로는 유선과 무선으로 구분
@@ -166,13 +166,13 @@
 - 여러 장치들에 널리 알려진 규격
 - 규격이 널리 공개되어 있기 때문에 컴퓨터와 네트워크 크래킹에 취약한 편
 
-응용: HTTP, SMTP, FTP, Telnet
-표현: ASCII, MPEG, JPEG, MIDI
-세션: NetBIOS, SAP, SDP, NWLink
-전송: TCP, UDP, SPX
-넷웤: IP IPX
-데이터링크: Ethernet, Token Ring, FDDI
-물리: X
+응용: HTTP, SMTP, FTP, Telnet  
+표현: ASCII, MPEG, JPEG, MIDI  
+세션: NetBIOS, SAP, SDP, NWLink  
+전송: TCP, UDP, SPX  
+넷웤: IP IPX  
+데이터링크: Ethernet, Token Ring, FDDI  
+물리: X  
 
 ### (3) 프로토콜 종류
 #### ㄱ. FTP(20,21)
