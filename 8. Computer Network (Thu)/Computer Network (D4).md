@@ -102,7 +102,7 @@
 집단 오류 검출 방식
 - 패리티 비트 검사 Parity Bit Check
 - 블록 합 검사 Blcok Sum Check
-- 순환 중복 검사 Cyclic Redundancy Check
+- 순환 중복 검사 Cyclic Redundancy Check  
 
 ## S19. 패리티 비트 검사]
 ### (1) 개요
