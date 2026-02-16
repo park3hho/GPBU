@@ -2,6 +2,9 @@
 **과제 주제**: If~Else 구조와 Switch Case 문을 이용하여 성적처리를 구하는 프로그램을 작성하시오.  
 (90점 이상 A, 80점 이상 B, 70점 이상 C, 60점 이상 D, 나머지 F)
 
+링크:
+https://docs.google.com/document/d/1Ut6MVODsMBTqHKB4s5hdnGaI3Yp_6rXGDMvWAA2uoJE/edit?usp=sharing
+
 ## A. 요구사항 도출
 ### 가. 브레인 스토밍
 - 성적 구분
@@ -33,3 +36,6 @@ psql -U user -d fridge
 - 그래서 헤더 폴더 위치를 알려줘야함. 왜 알려줘야 하냐?
 
 postgres는 헤더 파일을 설치하는 곳이 따로 있는데, gcc는 `/usr/include` 만 찾음
+
+## B. 코드
+GPT 딸깍
